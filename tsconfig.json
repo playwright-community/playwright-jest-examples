@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "node_modules/jest-playwright-preset/types/global.d.ts",
+    "node_modules/expect-playwright/global.d.ts"
+  ]
+}
