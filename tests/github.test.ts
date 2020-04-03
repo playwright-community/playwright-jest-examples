@@ -7,6 +7,10 @@ describe("GitHub", ()=> {
   })
   it("should contain 'Playwright' in the project title", async () => {
     await page.click(".repo-list-item:nth-child(1) a");
+    // via the CSS selector
     await expect(page).toHaveText("#readme h1", "Playwright")
+
+    // or via the Playwright text selector engine
+    await expect(page).toHaveSelector('text=Playwright')
   })
 })
