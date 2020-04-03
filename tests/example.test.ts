@@ -1,7 +1,10 @@
 describe("Example.com", () => {
   it("should have the exact text 'Example Domain' in the h1", async () => {
     await page.goto("https://example.com");
+    // via the toEqualText method
     await expect(page).toEqualText("h1", "Example Domain")
+    // or via the Playwright text selector engine
+    await expect(page).toHaveSelector('"Example Domain"')
   })
   it("should navigate to iana once you click on 'More information'", async () => {
     await page.click("a");

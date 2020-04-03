@@ -4,10 +4,11 @@
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "@types/jest",
+      "jest-playwright-preset",
+      "expect-playwright",
+    ]
   },
-  "include": [
-    "node_modules/jest-playwright-preset/types/global.d.ts",
-    "node_modules/expect-playwright/global.d.ts"
-  ]
 }
