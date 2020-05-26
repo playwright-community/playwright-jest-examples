@@ -11,6 +11,8 @@ describe("GitHub", ()=> {
     await expect(page).toHaveText("#readme h1", "Playwright")
 
     // or via the Playwright text selector engine
-    await expect(page).toHaveSelector('text=Playwright')
+    await expect(page).toHaveSelector('text=Playwright', {
+      state: "attached"
+    })
   })
 })

@@ -4,7 +4,9 @@ describe("Example.com", () => {
     // via the toEqualText method
     await expect(page).toEqualText("h1", "Example Domain")
     // or via the Playwright text selector engine
-    await expect(page).toHaveSelector('"Example Domain"')
+    await expect(page).toHaveSelector('"Example Domain"', {
+      state: "attached"
+    })
   })
   it("should navigate to iana once you click on 'More information'", async () => {
     await page.click("a");
