@@ -13,7 +13,7 @@
     "expect-playwright": "^0.2.4",
     "jest": "^26.0.1",
     "jest-playwright-preset": "^0.2.2",
-    "playwright-chromium": "^1.0.2",
+    "playwright": "^1.0.2",
     "ts-jest": "^26.0.0",
     "typescript": "^3.9.3"
   },

@@ -7,6 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir: [basic, basic-ts, create-react-app]
     steps:
     - uses: actions/checkout@v2
     - uses: microsoft/playwright-github-action@v1
@@ -14,5 +17,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - run: npm ci
+    - run: npm install
+      working-directory: ${{ matrix.dir }}
     - run: npm test
+      working-directory: ${{ matrix.dir }}
+      env:
+        SKIP_PREFLIGHT_CHECK: "true"
