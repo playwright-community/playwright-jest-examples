@@ -8,14 +8,14 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@types/jest": "^25.1.5",
-    "@types/node": "^13.11.0",
-    "expect-playwright": "^0.1.1",
-    "jest": "^25.2.6",
-    "jest-playwright-preset": "^0.1.1",
-    "playwright-chromium": "^0.12.1",
-    "ts-jest": "^25.3.0",
-    "typescript": "^3.8.3"
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.5",
+    "expect-playwright": "^0.2.4",
+    "jest": "^26.0.1",
+    "jest-playwright-preset": "^0.2.2",
+    "playwright-chromium": "^1.0.2",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.3"
   },
   "dependencies": {}
 }
