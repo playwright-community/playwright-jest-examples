@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        dir: [basic, basic-ts, create-react-app]
+        dir: [basic, basic-ts, create-react-app, playwright-video]
     steps:
     - uses: actions/checkout@v2
     - uses: microsoft/playwright-github-action@v1
