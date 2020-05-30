@@ -1,18 +1,16 @@
 {
-  "name": "expect-playwright-examples",
+  "name": "jest-playwright-example-basic",
   "version": "1.0.0",
-  "repository": "https://github.com/mxschmitt/expect-playwright-examples",
+  "repository": "https://github.com/playwright-community/playwright-jest-examples",
   "author": "Max Schmitt <max@schmitt.mx>",
   "license": "MIT",
   "scripts": {
     "test": "jest"
   },
   "devDependencies": {
-    "expect-playwright": "^0.2.4",
     "jest": "^26.0.1",
     "jest-playwright-preset": "^0.2.2",
-    "playwright": "^1.0.2",
-    "typescript": "^3.9.3"
+    "playwright": "^1.0.2"
   },
   "dependencies": {}
 }
