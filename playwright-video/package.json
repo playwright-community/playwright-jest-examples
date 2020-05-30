@@ -1,5 +1,5 @@
 {
-  "name": "jest-playwright-example-basic-ts",
+  "name": "jest-playwright-example-playwright-video",
   "version": "1.0.0",
   "repository": "https://github.com/playwright-community/playwright-jest-examples",
   "author": "Max Schmitt <max@schmitt.mx>",
@@ -8,13 +8,10 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.3",
-    "@types/node": "^14.0.5",
+    "ffmpeg-static": "^4.2.2",
     "jest": "^26.0.1",
     "jest-playwright-preset": "^0.2.2",
     "playwright": "^1.0.2",
-    "ts-jest": "^26.0.0",
-    "typescript": "^3.9.3"
-  },
-  "dependencies": {}
+    "playwright-video": "^1.0.2"
+  }
 }
