@@ -2,7 +2,7 @@
 
 # Jest create-react-app Playwright example with coverage
 
-[![Coverage Status](https://coveralls.io/repos/github/playwright-community/jest-playwright-examples/badge.svg)](https://coveralls.io/github/playwright-community/jest-playwright-examples)
+[![Coverage Status](https://coveralls.io/repos/github/playwright-community/playwright-jest-examples/badge.svg)](https://coveralls.io/github/playwright-community/playwright-jest-examples)
 
 This example shows how to use the [babel-plugin-istanbul](https://github.com/istanbuljs/babel-plugin-istanbul) to determine coverage data during the runtime with your end-to-end tests which will be stored onto the file system. In the end they will be merged with the different browsers and uploaded to Coveralls with a GitHub Action.
 
