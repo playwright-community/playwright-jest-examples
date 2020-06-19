@@ -4,9 +4,15 @@ import './App.css';
 
 const App = () => {
   const [backgroundColor, setBackgroundColor] = React.useState("#1abc9c")
-  const handleMakeTurquoise = () => setBackgroundColor("#1abc9c")
-  const handleMakeRed = () => setBackgroundColor("#e74c3c")
-  const handleMakeYellow = () => setBackgroundColor("#f1c40f")
+  const handleMakeTurquoise = () => {
+    setBackgroundColor("#1abc9c")
+  }
+  const handleMakeRed = () => {
+    setBackgroundColor("#e74c3c")
+  }
+  const handleMakeYellow = () => {
+    setBackgroundColor("#f1c40f")
+  }
   return (
     <div className="App">
       <header className="App-header" style={{ backgroundColor }}>
