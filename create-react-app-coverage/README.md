@@ -4,7 +4,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/playwright-community/playwright-jest-examples/badge.svg)](https://coveralls.io/github/playwright-community/playwright-jest-examples)
 
-This example shows how to use the [babel-plugin-istanbul](https://github.com/istanbuljs/babel-plugin-istanbul) to determine coverage data during the runtime with your end-to-end tests which will be stored onto the file system. In the end they will be merged with the different browsers and uploaded to Coveralls with a GitHub Action.
+This example shows how to use the [babel-plugin-istanbul](https://github.com/istanbuljs/babel-plugin-istanbul) to determine coverage data during the runtime with your end-to-end tests which will be stored onto the file system. In the end they will be merged with the different browsers and uploaded to Coveralls with a GitHub Action. Keep in mind, that Coveralls or Codecov only have partial / no support for partial line coverage.
 
 You are able to view the coverage in your browser with the `npx nyc report --reporter=html` command which is then available in the coverage folder `coverage/index.html`.
 

@@ -24,8 +24,9 @@ jobs:
       env:
         SKIP_PREFLIGHT_CHECK: "true"
     - name: Coveralls
+      uses: coverallsapp/github-action@master
       if: ${{ matrix.dir == 'create-react-app-coverage' }}
-      run: npx coveralls -v < coverage/lcov.info
-      working-directory: ${{ matrix.dir }}
-      env:
-        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-lcov: create-react-app-coverage/coverage/lcov.info
+        base-path: ${{ matrix.dir }}
