@@ -6,7 +6,8 @@
 
 ## Examples
 
-- [JavaScript example with Jest](https://github.com/playwright-community/playwright-jest-examples/tree/master/basic)
-- [TypeScript example with Jest](https://github.com/playwright-community/playwright-jest-examples/tree/master/basic-ts)
-- [create-react-app example with Jest and TypeScript](https://github.com/playwright-community/playwright-jest-examples/tree/master/create-react-app)
-- [playwright-video example with Jest](https://github.com/playwright-community/playwright-jest-examples/tree/master/playwright-video)
+- [JavaScript example](https://github.com/playwright-community/playwright-jest-examples/tree/master/basic)
+- [TypeScript example](https://github.com/playwright-community/playwright-jest-examples/tree/master/basic-ts)
+- [create-react-app example in TypeScript](https://github.com/playwright-community/playwright-jest-examples/tree/master/create-react-app)
+- [playwright-video example in JavaScript](https://github.com/playwright-community/playwright-jest-examples/tree/master/playwright-video)
+- [create-react-app example with coverage reporting in TypeScript](https://github.com/playwright-community/playwright-jest-examples/tree/master/create-react-app-coverage)
