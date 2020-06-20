@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "rm -rf .pw-cov && jest -c jest.config.js && node after.js && nyc report --reporter=lcovonly",
+    "test": "jest -c jest.config.js && nyc report --reporter=lcovonly",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
