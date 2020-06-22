@@ -10,7 +10,7 @@
     "@types/react-dom": "^16.9.8",
     "jest": "^26.0.1",
     "jest-image-snapshot": "^4.0.2",
-    "jest-playwright-preset": "^0.2.5",
+    "jest-playwright-preset": "^1.0.0",
     "playwright": "^1.1.1",
     "playwright-core": "npm:playwright-chromium@>=1.1.1",
     "react": "^16.13.1",
