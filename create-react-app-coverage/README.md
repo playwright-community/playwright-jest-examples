@@ -1,5 +1,3 @@
-
-
 # Jest create-react-app Playwright example with coverage
 
 [![Coverage Status](https://coveralls.io/repos/github/playwright-community/playwright-jest-examples/badge.svg)](https://coveralls.io/github/playwright-community/playwright-jest-examples)

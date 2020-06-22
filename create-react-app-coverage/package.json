@@ -10,20 +10,20 @@
     "babel-plugin-istanbul": "^6.0.0",
     "customize-cra": "^1.0.0",
     "jest": "^26.0.1",
-    "jest-playwright-preset": "^0.2.5",
+    "jest-playwright-preset": "^1.0.0",
     "nyc": "^15.1.0",
     "playwright": "^1.1.1",
     "react": "^16.13.1",
     "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "ts-jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
     "typescript": "^3.9.5"
   },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "rm -rf .pw-cov && jest -c jest.config.js && node after.js && nyc report --reporter=lcovonly",
+    "test": "jest -c jest.config.js && nyc report --reporter=lcovonly",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
