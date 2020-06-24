@@ -1,7 +1,7 @@
 const { override, addBabelPlugins } = require('customize-cra')
 
 module.exports = override(
-  addBabelPlugins(
+  process.env.USE_BABEL_PLUGIN_ISTANBUL && addBabelPlugins(
     'babel-plugin-istanbul',
   )
 )
