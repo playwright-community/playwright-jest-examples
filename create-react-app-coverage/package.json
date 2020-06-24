@@ -12,7 +12,7 @@
     "jest": "^26.0.1",
     "jest-playwright-preset": "^1.0.1",
     "nyc": "^15.1.0",
-    "playwright": "^1.1.1",
+    "playwright": "^1.1.0-next.1593036825936",
     "react": "^16.13.1",
     "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",
