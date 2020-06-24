@@ -2,10 +2,15 @@
 module.exports = {
     browsers: ['chromium', 'firefox', 'webkit'],
     serverOptions: {
-        command: `BROWSER=none npm start`,
+        command: `npm start`,
         port: 3000,
         launchTimeout: 10000,
         debug: true,
+        options: {
+            env: {
+                "BROWSER": "none",
+            }
+        }
     },
     launchOptions: {
         headless: true

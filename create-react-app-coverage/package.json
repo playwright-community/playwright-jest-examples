@@ -10,7 +10,7 @@
     "babel-plugin-istanbul": "^6.0.0",
     "customize-cra": "^1.0.0",
     "jest": "^26.0.1",
-    "jest-playwright-preset": "^1.0.0",
+    "jest-playwright-preset": "^1.0.1",
     "nyc": "^15.1.0",
     "playwright": "^1.1.1",
     "react": "^16.13.1",
