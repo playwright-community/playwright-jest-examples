@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         dir: [basic, basic-ts, create-react-app, playwright-video, create-react-app-coverage]
-        os: [ubuntu-latest, windows-latest]
+        platform: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.platform }}
     steps:
     - uses: actions/checkout@v2
