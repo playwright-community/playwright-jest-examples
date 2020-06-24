@@ -6,10 +6,11 @@ on:
     branches: [ master ]
 jobs:
   build:
-    runs-on: ubuntu-latest
     strategy:
       matrix:
         dir: [basic, basic-ts, create-react-app, playwright-video, create-react-app-coverage]
+        platform: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.platform }}
     steps:
     - uses: actions/checkout@v2
     - uses: microsoft/playwright-github-action@v1
