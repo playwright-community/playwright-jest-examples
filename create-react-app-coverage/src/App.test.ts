@@ -2,10 +2,6 @@ beforeEach(async () => {
   await page.goto('http://localhost:3000')
 })
 
-afterEach(async () => {
-  await jestPlaywright.saveCoverage(page)
-})
-
 test('use Turquoise as a default background color', async () => {
   await expect(page).toHaveSelector("text=#1abc9c")
 });
