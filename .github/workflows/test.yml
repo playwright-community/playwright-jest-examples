@@ -10,14 +10,15 @@ jobs:
       matrix:
         dir: [basic, basic-ts, create-react-app, playwright-video, create-react-app-coverage]
         platform: [ubuntu-latest, windows-latest]
+        node: [12.x, 14.x]
     runs-on: ${{ matrix.platform }}
     steps:
     - uses: actions/checkout@v2
     - uses: microsoft/playwright-github-action@v1
-    - name: Use Node.js
+    - name: Use Node.js ${{ matrix.node }}
       uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: ${{ matrix.node }}
     - run: npm install
       working-directory: ${{ matrix.dir }}
     - run: npm test
