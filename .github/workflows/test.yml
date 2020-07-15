@@ -10,7 +10,7 @@ jobs:
       matrix:
         dir: [basic, basic-ts, create-react-app, playwright-video, create-react-app-coverage]
         platform: [ubuntu-latest, windows-latest]
-        node: [12.x, 14.x]
+        node: [12.x, 14.x, 13.x]
     runs-on: ${{ matrix.platform }}
     steps:
     - uses: actions/checkout@v2
