@@ -8,9 +8,9 @@
     "test": "jest"
   },
   "devDependencies": {
-    "jest": "^26.0.1",
-    "jest-playwright-preset": "^1.1.0",
-    "playwright": "^1.1.1"
+    "jest": "^26.1.0",
+    "jest-playwright-preset": "^1.2.1",
+    "playwright": "^1.2.1"
   },
   "dependencies": {}
 }
