@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "jest": "^26.1.0",
-    "jest-playwright-preset": "^1.2.1",
+    "jest-playwright-preset": "^1.3.0-rc10",
     "playwright": "^1.2.1"
   },
   "dependencies": {}
