@@ -1,13 +1,3 @@
-const { saveVideo } = require('playwright-video')
-
-let capture
-beforeAll(async () => {
-  capture = await saveVideo(page, 'recording.mp4')
-})
-afterAll(async () => {
-  await capture.stop()
-})
-
 describe("Example.com", () => {
   it("should have the exact text 'Example Domain' in the h1", async () => {
     await page.goto("https://example.com");

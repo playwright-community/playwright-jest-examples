@@ -1,5 +1,8 @@
-describe("GitHub", ()=> {
-  it("should show the microsoft/Playwright project in the search if you search for Playwright", async()=> {
+// Needs to be higher than the default Playwright timeout
+jest.setTimeout(40 * 1000)
+
+describe("GitHub", () => {
+  it("should show the microsoft/Playwright project in the search if you search for Playwright", async () => {
     await page.goto("https://github.com");
     await page.type('input[name="q"]', "Playwright");
     await page.press('input[name="q"]', "Enter");

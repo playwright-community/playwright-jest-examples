@@ -17,12 +17,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "types": [
       "@types/jest",
       "jest-playwright-preset",
-      "expect-playwright",
-    ]
+      "expect-playwright"
+    ],
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
     "src"
