@@ -112,6 +112,8 @@ temp/
 
 package-lock.json
 yarn.lock
+pnpm-lock.yaml
 .DS_Store
 .pw-cov
 coverage.json
+.parcel-cache
