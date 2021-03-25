@@ -11,7 +11,7 @@
     "jest": "^26.6.3",
     "jest-image-snapshot": "^4.3.0",
     "jest-playwright-preset": "^1.5.1",
-    "playwright": "^1.9.2",
+    "playwright": "^1.10.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
