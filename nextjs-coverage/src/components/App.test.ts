@@ -10,6 +10,11 @@ test("smoke", async () => {
   await expect(page).toHaveSelector("[data-testid=button]");
 });
 
+test("api got fetched", async () => {
+  jest.setTimeout(60000);
+  await expect(page).toHaveText("hello world");
+});
+
 test("click", async () => {
   jest.setTimeout(60000);
 

@@ -1,8 +1,19 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import App from '../components/App'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import App from "../components/App";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [helloEndpointData, setHelloEndpointData] = useState<unknown>(null);
+  useEffect(() => {
+    // this is just for illustrative purposes, it's not a good way to handle fetching
+    async function fetchData() {
+      const json = (await fetch("/api/hello")).json();
+      return json;
+    }
+    fetchData().then(setHelloEndpointData);
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -25,6 +36,8 @@ export default function Home() {
         </div>
 
         <p>debug: NODE_ENV = {process.env.NODE_ENV}</p>
+
+        <p>api response: <code>{JSON.stringify(helloEndpointData, null, 4)}</code></p>
       </main>
 
       <footer className={styles.footer}>
