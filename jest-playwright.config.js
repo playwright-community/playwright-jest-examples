@@ -1,13 +1,5 @@
 // https://github.com/playwright-community/jest-playwright/#configuration
 module.exports = {
-  browsers: ["chromium", "firefox", "webkit"],
-  exitOnPageError: false, // GitHub currently throws errors
-  launchOptions: {
-    headless: true
-  }
-}
-
-module.exports = {
   name: "e2e",
   use: {
       ignoreHTTPSErrors: true,
@@ -27,7 +19,7 @@ module.exports = {
       screenshot: "only-on-failure",
       video: "retain-on-failure",
   },
-  testDir: `e2e_tests_and_monitoring/Admin/${testDirName}`,
+  testDir: `tests`,
   retries: 1,
   reporter: [
       ["dot"],
