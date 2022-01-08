@@ -1,0 +1,32 @@
+version: 2.1
+
+executors:
+  node-browsers:
+    docker:
+      - image: circleci/node:15-browsers
+    working_directory: /mnt/ramdisk
+
+jobs:
+  build:
+    executor: node-browsers
+    parallelism: 2
+    resource_class: small
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /mnt/ramdisk/
+      - run:
+          name: NPM install
+          command: npm ci
+      - run:
+          name: Tests Using Glob/Split
+          command: bash glob_split.sh
+      - store_test_results:
+          path: www/junit.xml
+      - store_artifacts:
+          path: /home/circleci/artifacts
+
+workflows:
+  main:
+    jobs:
+      - build

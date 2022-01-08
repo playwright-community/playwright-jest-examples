@@ -1,14 +1,12 @@
-# Jest Playwright examples
+# Jest Playwright JavaScript example
 
-![CI](https://github.com/playwright-community/playwright-jest-examples/workflows/CI/badge.svg)
+## Showcases
 
-> Demonstrates the usage of Playwright (cross-browser automation library in Node.js) in combination with Jest on GitHub Actions to test various sites.
+- [github.com](https://github.com/playwright-community/playwright-jest-examples/blob/master/basic/tests/github.test.js)
+- [example.com](https://github.com/playwright-community/playwright-jest-examples/blob/master/basic/tests/example.test.js)
 
-## Examples
+## Used tools
 
-- [JavaScript example](https://github.com/playwright-community/playwright-jest-examples/tree/master/basic)
-- [TypeScript example](https://github.com/playwright-community/playwright-jest-examples/tree/master/basic-ts)
-- [create-react-app example in TypeScript](https://github.com/playwright-community/playwright-jest-examples/tree/master/create-react-app)
-- [playwright-video example in JavaScript](https://github.com/playwright-community/playwright-jest-examples/tree/master/playwright-video)
-- [create-react-app example with coverage reporting in TypeScript](https://github.com/playwright-community/playwright-jest-examples/tree/master/create-react-app-coverage)
-- [Next.js example with coverage reporting in TypeScript](https://github.com/playwright-community/playwright-jest-examples/tree/master/nextjs-coverage)
+- [jest-playwright](https://github.com/playwright-community/jest-playwright) - integrates Jest and Playwright
+- [expect-playwright](https://github.com/playwright-community/expect-playwright) - provides useful expect statements
+- [Jest](https://jestjs.io) - provides the testing suite
