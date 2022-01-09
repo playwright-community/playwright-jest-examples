@@ -21,6 +21,19 @@ jobs:
       - run:
           name: Tests Using Glob/Split
           command: bash glob_split.sh
+      - run:
+          name: Showcase saved junit.xml
+          command: |
+            # we will note that for each <testcase>, the `file` attribute is missing
+            cat www/junit.xml
+      - run:
+          name: Modify junit.xml to add `file`
+          command: |
+            python3 www/xml_corrector.py
+      - run:
+          name: Showcase modified junit.xml
+          command: |
+            cat www/junit.xml
       - store_test_results:
           path: www/junit.xml
       - store_artifacts:
