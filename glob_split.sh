@@ -16,7 +16,7 @@ do
   echo "$prefix$line" >> updated_tests.txt
 done
 
-TESTFILES=$(circleci tests split --split-by=timings "${prefix}updated_tests.txt")
+TESTFILES=$(circleci tests split --split-by=timings --timings-type=classname "${prefix}updated_tests.txt")
 echo ${TESTFILES}
 
 npx playwright test --workers=1 --config="${prefix}playwright.config.js" ${TESTFILES}
