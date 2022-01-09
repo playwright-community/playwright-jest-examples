@@ -19,4 +19,4 @@ done
 TESTFILES=$(circleci tests split --split-by=timings "${prefix}updated_tests.txt")
 echo ${TESTFILES}
 
-npx playwright test --workers=4 --config="${prefix}playwright.config.js" ${TESTFILES}
+npx playwright test --workers=1 --config="${prefix}playwright.config.js" ${TESTFILES}
