@@ -24,6 +24,8 @@ jobs:
       - store_test_results:
           path: www/junit.xml
       - store_artifacts:
+          path: /mnt/ramdisk/www/junit.xml
+      - store_artifacts:
           path: /home/circleci/artifacts
 
 workflows:
