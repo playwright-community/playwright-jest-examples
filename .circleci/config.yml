@@ -12,6 +12,10 @@ jobs:
     parallelism: 2
     resource_class: small
     steps:
+      - run:
+          name: Check out previous test metadata
+          command: |
+            cat "${CIRCLE_INTERNAL_TASK_DATA}/circle-test-results/results.json" | jq .
       - checkout
       - attach_workspace:
           at: /mnt/ramdisk/
