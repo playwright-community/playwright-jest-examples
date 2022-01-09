@@ -4,9 +4,6 @@
   "repository": "https://github.com/playwright-community/playwright-jest-examples",
   "author": "Max Schmitt <max@schmitt.mx>",
   "license": "MIT",
-  "scripts": {
-    "test": "jest"
-  },
   "devDependencies": {
     "@playwright/test": "^1.17.1",
     "jest": "^27.0.3",

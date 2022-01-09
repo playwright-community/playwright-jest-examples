@@ -117,3 +117,6 @@ pnpm-lock.yaml
 .pw-cov
 coverage.json
 .parcel-cache
+
+# artifacts
+junit.xml
