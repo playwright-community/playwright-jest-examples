@@ -2,8 +2,8 @@
 
 ## Showcases
 
-- [github.com](https://github.com/playwright-community/playwright-jest-examples/blob/master/basic-ts/tests/github.test.ts)
-- [example.com](https://github.com/playwright-community/playwright-jest-examples/blob/master/basic-ts/tests/example.test.ts)
+- [github.com](https://github.com/playwright-community/playwright-jest-examples/blob/main/basic-ts/tests/github.test.ts)
+- [example.com](https://github.com/playwright-community/playwright-jest-examples/blob/main/basic-ts/tests/example.test.ts)
 
 ## Used tools
 

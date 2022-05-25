@@ -6,7 +6,7 @@ You are able to view the coverage in your browser with the `npx nyc report --rep
 
 ## Showcases
 
-- [App.test.ts](https://github.com/playwright-community/playwright-jest-examples/blob/master/nextjs-coverage/src/components/App.test.ts) - Full covered React application which shows how tracked functions will look like
+- [App.test.ts](https://github.com/playwright-community/playwright-jest-examples/blob/main/nextjs-coverage/src/components/App.test.ts) - Full covered React application which shows how tracked functions will look like
 
 ## Used tools
 

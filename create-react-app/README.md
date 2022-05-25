@@ -2,7 +2,7 @@
 
 ## Showcases
 
-- [App.test.ts](https://github.com/playwright-community/playwright-jest-examples/blob/master/create-react-app/src/App.test.ts)
+- [App.test.ts](https://github.com/playwright-community/playwright-jest-examples/blob/main/create-react-app/src/App.test.ts)
 
 ## Used tools
 

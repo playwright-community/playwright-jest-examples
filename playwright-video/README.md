@@ -2,7 +2,7 @@
 
 ## Showcases
 
-- [example.com](https://github.com/playwright-community/playwright-jest-examples/blob/master/playwright-video/tests/example.test.js)
+- [example.com](https://github.com/playwright-community/playwright-jest-examples/blob/main/playwright-video/tests/example.test.js)
 
 ## Used tools
 
