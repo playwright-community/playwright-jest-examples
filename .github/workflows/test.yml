@@ -11,7 +11,7 @@ jobs:
       matrix:
         dir: [basic, basic-ts, create-react-app, playwright-video, create-react-app-coverage, nextjs-coverage]
         platform: [ubuntu-latest, windows-latest]
-        node: ['12', '14']
+        node: ['14', '16']
     runs-on: ${{ matrix.platform }}
     steps:
     - uses: actions/checkout@v2
