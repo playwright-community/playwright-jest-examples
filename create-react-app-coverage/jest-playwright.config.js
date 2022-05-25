@@ -4,7 +4,8 @@ module.exports = {
     serverOptions: {
         command: `npm start`,
         port: 3000,
-        launchTimeout: 10000,
+        protocol: 'http',
+        launchTimeout: 60000,
         debug: true,
         options: {
             env: {
