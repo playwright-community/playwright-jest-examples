@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-browsers:
     docker:
-      - image: circleci/node:15-browsers
+      - image: cimg/node:16.15-browsers
     working_directory: /mnt/ramdisk
 
 jobs:
