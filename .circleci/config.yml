@@ -45,7 +45,7 @@ jobs:
       - run:
           name: Debug Test Metadata
           command: |
-            cat "${CIRCLE_INTERNAL_TASK_DATA}/circle-test-results/results.json" | jq .
+            cat "${CIRCLE_INTERNAL_TASK_DATA}/circle-test-results/results.json" | jq "."
 
 workflows:
   main:
