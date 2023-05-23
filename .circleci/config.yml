@@ -39,7 +39,7 @@ jobs:
           command: |
             cat www/junit.xml
       - store_test_results:
-          path: www/junit.xml
+          path: www
       - store_artifacts:
           path: /mnt/ramdisk/www/junit.xml
       - run:
